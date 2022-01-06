@@ -1,0 +1,181 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Lato Black";
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Lato Bold";
+  color: rgb(0, 11, 90);
+}
+
+a:link {
+  text-decoration: none;
+  text-shadow: none;
+  color: rgba(0, 11, 90, 0.75);
+}
+
+a:visited {
+  color: rgb(0, 11, 90);
+}
+
+a:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(216, 177, 60);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.App::before {
+  content: "";
+  z-index: 0;
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100vh;
+  background-image: url("./assets/banklogo.lined.svg");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+}
+
+/* BANK LOGO */
+.logo-container {
+  z-index: 1;
+  position: fixed;
+  right: 0px;
+  bottom: -80px;
+}
+
+/* HEADER & USER NAVIGATION */
+.header-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.header-light {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.bank-title {
+  text-indent: 2rem;
+  font-size: 70px;
+  font-family: "IM Fell English SC", serif;
+  margin: 0;
+}
+
+.usernav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 20px;
+}
+
+.usernav-link img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.usernav-link button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+}
+
+.usernav-link button:hover {
+  cursor: pointer;
+}
+
+.usernav-icons {
+  height: 50px;
+  width: 50px;
+}
+
+/* HOME NAVIGATION */
+.navbar-container {
+  right: 0px;
+  top: 40px;
+  width: 30vw;
+  min-width: 500px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  gap: 30px;
+}
+
+.nav-link {
+  font-family: "Lato Black";
+  height: 10vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  color: rgb(0, 11, 90);
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: rgb(216, 177, 60);
+}
+
+/* CARDS */
+.secondary-card {
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin-bottom: 20%;
+  justify-content: space-evenly;
+}
+
+.mini-card {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: rgba(218, 235, 255, 0.75);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  border-right: 2px solid rgba(183, 215, 255, 0.15);
+  border-bottom: 2px solid rgba(183, 215, 255, 0.15);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  text-align: center;
+  max-width: 30%;
+  min-width: 250px;
+  padding: 15px;
+}
